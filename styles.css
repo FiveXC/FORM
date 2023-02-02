@@ -141,23 +141,23 @@ font-size: 0.7rem;
 color: red;
 display: none;
 }
-    .preenchaNome2{
-    position: absolute;
-    left: 34rem;
-    top: 14.2rem;
-    font-size: 0.7rem;
-    color: red;
-    display: none;
-    }
-    .inSenha{
-    background-color: transparent;
-    border: none;
-    outline: none;
-    color: rgb(0, 0, 0);
-    width: 20vw;
-    margin-left: 0.5rem;  
-    }
-    .olhoaberto1{
+.preenchaNome2{
+position: absolute;
+left: 34rem;
+top: 14.2rem;
+font-size: 0.7rem;
+color: red;
+display: none;
+}
+.inSenha{
+background-color: transparent;
+border: none;
+outline: none;
+color: rgb(0, 0, 0);
+width: 20vw;
+margin-left: 0.5rem;  
+}
+.olhoaberto1{
     position: absolute;
     top: 15.5rem;
     left: 24rem;
@@ -317,68 +317,119 @@ display: none;
     width: 35vw;
     }
     }
-    .areaForm2{
-    left: 8rem;
-    width: 50vw;
-    } 
+
+
+
     
+@media screen and (max-width: 847px) {
+
+form{padding-right: 2rem;}
+fieldset{width: 35vw;}
+.olhoaberto1{
+left: 16rem;
+top: 15.8rem;
+}
+.olhoaberto2{
+left: 16rem;
+top: 19.8rem;
+}
+.areabntcor{
+width: 10vw;
+height: 4vh;
+}
+.bolinha{
+width: 1.2vw;
+height: 1.9vh;   
+}
+.bolinha.mover{
+margin-left: 4rem;
+}
+.preenchaNome{
+top: 9.5rem;
+left: 0.4rem;
+}
+.preenchaEmail{
+left: 0.4rem;
+top: 13.5rem;
+}
+.preenchaSenha{
+left: 0.4rem;
+top: 17.5rem;
+}
+.preenchaConfirmSenha{
+left: 0.4rem;
+}
+}
+
+
+@media screen and (max-width: 730px) {
+body{
+height: 100vh;
+}
+.direita{
+margin: auto;
+height: 70vh;
+width: 80vw;
+border-radius: 1rem;
+}
+header{
+background-color: transparent;
+margin-bottom:1rem ;
+}
+form{
+margin: auto;
+}
+fieldset{
+width: 70vw;
+margin-left: 2rem;
+}
+.olhoaberto1{
+left: 24rem;
+top: 16.5rem;
+}
+.olhoaberto2{
+left: 24rem;
+top: 20.5rem;
+}
+.areabntcor{
+width: 15vw;
+height: 4vh;
+margin-left: 1rem;
+}
+.bolinha{
+width: 2.5vw;
+height: 2vh;   
+}
+.bolinha.mover{
+margin-left: 3.5rem;
+}
+.inNome{width: 67vw;}
+.inEmail{width: 67vw;}
+.inSenhal{width: 67vw;}
+.inConfirmSenha{width: 67vw;}
+.btnEnviar{
+width: 50vw;
+margin-left: 2rem;
+}
+.preenchaNome{
+top: 10rem;
+left: 5rem;
+}
+.preenchaEmail{
+left: 5rem;
+top: 14rem;
+}
+.preenchaSenha{
+left: 5rem;
+top: 18.2rem;
+}
+.preenchaConfirmSenha{
+top: 22.5rem;
+left: 5rem;
+}
+}
 
     
     
     
-    @media screen and (max-width: 730px) {
-    .areaForm{
-    margin: auto;
-    margin-top: 4rem;
-    width: 70vw;
-    }
-    fieldset{
-    width: 60vw;
-    }
-    .olhoaberto1{
-    left: 23rem;
-    top: 20.6rem;}
-    .olhoaberto2{
-    left: 23rem;
-    top: 24.6rem;
-    }
     
-    .btnEnviar{
-    width: 50vw;
-    }
-    .preencha{
-    left: 11rem;
-    top: 9rem;
-    font-size: 0.7rem;
-    }
-    .inNome{
-    width: 57vw;
-    }
-    .inEmail{
-    width: 57vw;
-    }
-    .inSenha{
-    width: 57vw;
-    }
-    .inConfirmSenha{
-    width: 57vw;
-    }
-    
-    .preenchaNome{
-    left: 6.5rem;
-    }
-    .preenchaEmail{
-    left: 6.5rem;
-    }
-    .preenchaSenha{
-    left: 6.5rem;
-    }
-    .preenchaConfirmSenha{
-    left: 6.5rem;
-    }
-    .areaForm2{
-    left: 4.6rem;
-    width: 70vw;
-    }
-    
-    }
