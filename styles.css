@@ -362,72 +362,77 @@ left: 0.4rem;
 }
 
 
-@media screen and (max-width: 730px) {
-body{
-height: 100vh;
-}
-.direita{
-margin: auto;
-height: 70vh;
-width: 80vw;
-border-radius: 1rem;
-}
-header{
-background-color: transparent;
-margin-bottom:1rem ;
-}
-form{
-margin: auto;
-}
-fieldset{
-width: 70vw;
-margin-left: 2rem;
-}
-.olhoaberto1{
-left: 24rem;
-top: 16.5rem;
-}
-.olhoaberto2{
-left: 24rem;
-top: 20.5rem;
-}
-.areabntcor{
-width: 15vw;
-height: 4vh;
-margin-left: 1rem;
-}
-.bolinha{
-width: 2.5vw;
-height: 2vh;   
-}
-.bolinha.mover{
-margin-left: 3.5rem;
-}
-.inNome{width: 67vw;}
-.inEmail{width: 67vw;}
-.inSenhal{width: 67vw;}
-.inConfirmSenha{width: 67vw;}
-.btnEnviar{
-width: 50vw;
-margin-left: 2rem;
-}
-.preenchaNome{
-top: 10rem;
-left: 5rem;
-}
-.preenchaEmail{
-left: 5rem;
-top: 14rem;
-}
-.preenchaSenha{
-left: 5rem;
-top: 18.2rem;
-}
-.preenchaConfirmSenha{
-top: 22.5rem;
-left: 5rem;
-}
-}
+ @media  (max-width: 730px) {
+    body{
+    height: 100vh;
+ 
+    }
+    .direita{
+    margin: auto;
+    height: 70vh;
+    width: 80vw;
+    border-radius: 1rem;
+    }
+    .areaForm{
+    margin: auto;
+    margin-top: 2rem;
+    }
+    header{
+    background-color: transparent;
+    margin-bottom:1rem ;
+    }
+    form{
+    margin: auto;
+    }
+    fieldset{
+    width: 70vw;
+    margin-left: 2rem;
+    }
+    .olhoaberto1{
+    left: 24rem;
+    top: 15.5rem;
+    }
+    .olhoaberto2{
+    left: 24rem;
+    top: 19.5rem;
+    }
+    .areabntcor{
+    width: 15vw;
+    height: 4vh;
+    margin-left: 1rem;
+    }
+    .bolinha{
+    width: 2.5vw;
+    height: 2vh;   
+    }
+    .bolinha.mover{
+    margin-left: 3.5rem;
+    }
+    .inNome{width: 67vw;}
+    .inEmail{width: 67vw;}
+    .inSenhal{width: 67vw;}
+    .inConfirmSenha{width: 67vw;}
+    .btnEnviar{
+    width: 50vw;
+    margin-left: 2rem;
+    }
+    .preenchaNome{
+    top: 10rem;
+    left: 5rem;
+    }
+    .preenchaEmail{
+    left: 5rem;
+    top: 14rem;
+    }
+    .preenchaSenha{
+    left: 5rem;
+    top: 18.2rem;
+    }
+    .preenchaConfirmSenha{
+    top: 22.5rem;
+    left: 5rem;
+    }
+    }
 
     
     
