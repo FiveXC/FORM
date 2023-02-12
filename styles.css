@@ -34,7 +34,7 @@ background-color: #000000;
 body.dark ::-webkit-input-placeholder{
 color: rgb(255, 255, 255);
 }
-body.dark .inNome,.inEmail,.inSenha,.inConfirmSenha{
+body.dark .inNome, body.dark .inEmail,body.dark .inSenha, body.dark .inConfirmSenha{
 color: white;
 }
     
