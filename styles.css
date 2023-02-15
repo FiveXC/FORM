@@ -85,7 +85,7 @@ display: flex;
 .direita{
 background-color: rgb(255, 255, 255);
 width: 40%;
-height:37.4rem;
+height:39rem;
 }
 .areaForm{
 margin: auto;
@@ -93,19 +93,16 @@ margin-top: 4rem;
 width: 27vw;
 height: 80vh;
 border-radius: 0.5rem;
-position: relative;
 }
 .areaForm.sumir{
 display: none;
 }
 h2{
-
 text-align: center;
 margin-top: 1rem;
 font-size: 2rem;
 font-weight: 900;
 color:  #A970FF;
-
 }
 .preencha{
 position: absolute;
@@ -224,30 +221,24 @@ scale: 0.95;
 }
 
 
-
-
-
-
-
-
-
-
-@media  (max-width: 730px){
+@media  (max-width: 600px){
 .direita{
 width: 100%;
 height: 32rem;
-border: 2px solid black;
+position: relative;
+background-color: transparent;
 }
 .areaForm{
-border: 1px solid black;
+
 width: 80%;
-position: relative;
+height: 69vh;
+background-color: white;
 }
 
 form{
 width: 100%;
+height: 69vh;
 border: 1px solid black;
-position: relative;
 }
 fieldset{
 width: 90%;
@@ -255,12 +246,12 @@ height: 3rem;
 position: relative;
 }
 .olhoaberto1{
-left: 85%;
-top: 46%;
+left: 92%;
+top: 0%;
 }
 .olhoaberto2{
-left: 85%;
-top: 66%;
+left: 92%;
+top: 0%;
 }
 .inNome, .inEmail{
 width: 100% ;
@@ -269,20 +260,24 @@ width: 100% ;
 width: 84% ;
 }
 .preenchaNome{
-display: block;
-top: 16%;
-left:5%;
+top: 130%;
+left:1%;
+}
+.preenchaEmail{
+top: 130%;
+left:1%;
 }
 .preenchaSenha{
 display: block;
-top: 35%;
-left:5%;
+top: 130%;
+left:1%;
 }
-.preenchaEmail{
+.preenchaConfirmSenha{
 display: block;
-top: 55%;
-left:5%;
+top: 130%;
+left:1%;
 }
+
 }
 
 
