@@ -12,81 +12,61 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 </head>
 <body>
-<header>
-    <div class = "areabntcor">
-
-        <label for = "checkboxcor">
-        <p class = "bolinha"></p>
-        </label>
-        
-        </div>
-        
-        <input type="checkbox" class = "checkboxcor" id = "checkboxcor" >
-        
-        
-</header>
-    <main>
-<div class = "direita">
-    <div class = "areaForm">
-
-        <span class = "preencha"></span>
-        <form autocomplete="on" class = "form">
-        
-        <fieldset class = "fieldset">
-        <legend class="legend1">Username</legend>
-        <!-- oninput serve para que toda vez que vc digite alguma coisa no input uma function seja ativa no JS-->
-        <input type="text" class = "inNome required" placeholder = "Digite seu username" autofocus oninput="valiNome()" />
-        </fieldset>
-        <span class = "preenchaNome span">Deve conter no mínimo 4 caracteres</span>
-        <span class = "preenchaNome2 span2">Username já existe coloque outro</span>
-        
-        <fieldset class = "fieldset">
-        <legend class="legend2" >Email</legend>
-        <input type="email" class = "inEmail required" placeholder = "Digite seu email" oninput="valiEmail()"/>
-        </fieldset>
-        <span class = "preenchaEmail span">Email não valido</span>
-        
-        <fieldset class = "fieldset" >
-        <legend  >Senha</legend>
-        <input type="password" class = "inSenha required" placeholder = "Digite sua senha" oninput="valiSenha()" />
-        </fieldset>
-        <span class = "preenchaSenha span">Senha deve conter no mínimo 8 caracteres</span>
-        <i class="fa-solid fa-eye olhoaberto1"></i>
-        
-        <fieldset class = "fieldset" >
-        <legend  >Confirme sua senha</legend>
-        <input type="password" class = "inConfirmSenha required" placeholder = "Confirme sua senha" oninput="valiSenhaIndentica()" />
-        </fieldset>
-        <span class = "preenchaConfirmSenha span">Senhas devem ser compativeis</span>
-        
-        <i class="fa-solid fa-eye olhoaberto2"></i>
-        
-        <button type = "submit" class = "btnEnviar">Enviar</button>
-        </form>
-        </div>
+  <header>
+        <div class = "areabntcor">
+    
+            <label for = "checkboxcor">
+            <p class = "bolinha"></p>
+            </label>
             
-        
-        <div class = "areaForm2">
-        
-        <h1 class  = "login">LOGIN</h1>
-        <form>
-        
-        <fieldset>
-        <legend>Username</legend>
-        <input type = "text" class = "UserLogin" placeholder="Digite seu usuário"/>
-        </fieldset>
-        
-        <fieldset>
-        <legend>Senha</legend>
-        <input type = "password" class = "SenhaLogin" placeholder="Digite sua senha"/>
-        </fieldset>
-        <button class = "btnLogin">Logar</button>
-        
-        </form>
-        
-        </div>
-    </div>
-    </main>
+            </div>
+            
+            <input type="checkbox" class = "checkboxcor" id = "checkboxcor" >
+            
+            
+    </header>
+        <main>
+    <div class = "direita">
+        <div class = "areaForm">
+    
+            <span class = "preencha"></span>
+
+            <form autocomplete="on" class = "form">
+            
+            <fieldset class = "fieldset">
+            <legend class="legend1">Username</legend>
+            <!-- oninput serve para que toda vez que vc digite alguma coisa no input uma function seja ativa no JS-->
+            <input type="text" class = "inNome required" placeholder = "Digite seu username" autofocus oninput="valiNome()" />
+            </fieldset>
+            <span class = "preenchaNome span">Deve conter no mínimo 4 caracteres</span>
+
+            
+            <fieldset class = "fieldset">
+            <legend class="legend2" >Email</legend>
+            <input type="email" class = "inEmail required" placeholder = "Digite seu email" oninput="valiEmail()"/>
+            </fieldset>
+            <span class = "preenchaEmail span">Email não valido</span>
+            
+            <fieldset class = "fieldset" >
+            <legend  >Senha</legend>
+            <input type="password" class = "inSenha required" placeholder = "Digite sua senha" oninput="valiSenha()" />
+            </fieldset>
+            <span class = "preenchaSenha span">Senha deve conter no mínimo 8 caracteres</span>
+            <i class="fa-solid fa-eye olhoaberto1"></i>
+
+            <fieldset class = "fieldset" >
+            <legend  >Confirme sua senha</legend>
+            <input type="password" class = "inConfirmSenha required" placeholder = "Confirme sua senha" oninput="valiSenhaIndentica()" />
+            </fieldset>
+            <span class = "preenchaConfirmSenha span">Senhas devem ser compativeis</span>
+            
+            <i class="fa-solid fa-eye olhoaberto2"></i>
+            
+            <button type = "submit" class = "btnEnviar">Enviar</button>
+            </form>
+            </div>
+                
+        </main>
 
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
