@@ -12,7 +12,11 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 </head>
 <body>
-  <header>
+ 
+<main>
+
+<div class = "direita">
+        
         <div class = "areabntcor">
     
             <label for = "checkboxcor">
@@ -22,11 +26,6 @@
             </div>
             
             <input type="checkbox" class = "checkboxcor" id = "checkboxcor" >
-            
-            
-    </header>
-        <main>
-    <div class = "direita">
         <div class = "areaForm">
     
             <span class = "preencha"></span>
@@ -37,37 +36,42 @@
             <legend class="legend1">Username</legend>
             <!-- oninput serve para que toda vez que vc digite alguma coisa no input uma function seja ativa no JS-->
             <input type="text" class = "inNome required" placeholder = "Digite seu username" autofocus oninput="valiNome()" />
-            </fieldset>
             <span class = "preenchaNome span">Deve conter no mínimo 4 caracteres</span>
+            </fieldset>
+           
 
             
             <fieldset class = "fieldset">
             <legend class="legend2" >Email</legend>
             <input type="email" class = "inEmail required" placeholder = "Digite seu email" oninput="valiEmail()"/>
-            </fieldset>
             <span class = "preenchaEmail span">Email não valido</span>
+            </fieldset>
+           
             
             <fieldset class = "fieldset" >
             <legend  >Senha</legend>
             <input type="password" class = "inSenha required" placeholder = "Digite sua senha" oninput="valiSenha()" />
-            </fieldset>
             <span class = "preenchaSenha span">Senha deve conter no mínimo 8 caracteres</span>
             <i class="fa-solid fa-eye olhoaberto1"></i>
+            </fieldset>
+         
+          
 
             <fieldset class = "fieldset" >
             <legend  >Confirme sua senha</legend>
             <input type="password" class = "inConfirmSenha required" placeholder = "Confirme sua senha" oninput="valiSenhaIndentica()" />
-            </fieldset>
             <span class = "preenchaConfirmSenha span">Senhas devem ser compativeis</span>
-            
             <i class="fa-solid fa-eye olhoaberto2"></i>
+            </fieldset>
+      
+            
+
             
             <button type = "submit" class = "btnEnviar">Enviar</button>
             </form>
             </div>
                 
         </main>
-
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
