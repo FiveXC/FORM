@@ -20,6 +20,7 @@ width: 10vw;
 height: 3vh;
 border: 1px solid rgb(0, 0, 0);
 border-radius: 1rem;
+cursor: pointer;
 }
 body.dark .areabntcor{
 border: 1px solid rgb(255, 255, 255);
@@ -35,7 +36,7 @@ body.dark ::-webkit-input-placeholder{
 color: rgb(255, 255, 255);
 }
 body.dark .inNome, body.dark .inEmail,body.dark .inSenha, body.dark .inConfirmSenha{
-color: white;
+color: rgb(0, 0, 0);
 }
     
 .bolinha{
@@ -49,7 +50,7 @@ cursor: pointer;
 transition: 0.3s;
 }
 .bolinha.mover{
-margin-left: 7.3rem;
+margin-left: 85%;
 transition: 0.3s;
 }
 body.dark .bolinha{
@@ -58,10 +59,10 @@ background-color: white;
 color: black;
 }
 html{
-    height: 100%;
+height: 100%;
     }    
 body{
-    min-height: 100%;
+min-height: 100%;
 display: flex;
 flex-direction: column;
 background-color: #ffffff;
@@ -135,8 +136,8 @@ margin-left: 0.5rem;
 }
 .preenchaNome{
 position: absolute;
-left: 8.2rem;
-top: 8.8rem;
+left: 2.8rem;
+top: 3rem;
 font-size: 0.7rem;
 color: rgb(255, 0, 0);
 display: none;
@@ -175,24 +176,24 @@ margin-left: 0.5rem;
 position: absolute;
 font-size: 0.7rem;
 color: red;
-top: 12.8rem;
-left: 8.2rem;
+top: 7.3rem;
+left: 2.8;
 display: none;
 }
 .preenchaSenha{
 position: absolute;
 font-size: 0.7rem;
 color: red;
-top: 17rem;
-left: 8.2rem;
+top: 11.5rem;
+left: 2.8rem;
 display: none;
 }
 .preenchaConfirmSenha{
 position: absolute;
 font-size: 0.7rem;
 color: red;
-top: 21.5rem;
-left: 8.2rem;
+top: 15.5rem;
+left: 2.8rem;
 display: none;
 }
 .inConfirmSenha{
@@ -221,24 +222,45 @@ scale: 0.95;
 }
 
 
-@media  (max-width: 600px){
+@media  (max-width: 730px){
+
+body.dark ::-webkit-input-placeholder{
+color: rgb(0, 0, 0);
+}
+body.dark .direita{
+background-color: transparent;
+}
 .direita{
 width: 100%;
 height: 32rem;
 position: relative;
 background-color: transparent;
 }
+.areabntcor{
+margin-left: 1rem;
+width: 13%;
+position: relative;
+}
+.checkboxcor{
+position: relative;
+}
+.bolinha{
+width: 0.5rem;
+height: 0.5rem;
+top: 22%;
+}
+.bolinha.mover{
+margin-left: 83%;
+}
 .areaForm{
-
 width: 80%;
 height: 69vh;
 background-color: white;
 }
-
 form{
 width: 100%;
 height: 69vh;
-border: 1px solid black;
+padding: 1rem;
 }
 fieldset{
 width: 90%;
