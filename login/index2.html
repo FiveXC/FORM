@@ -15,26 +15,21 @@
 
 <main> 
 
-<form>
-    <h1>LOGIN</h1>
 
-<fieldset class = "fieldset1">
-    <legend class="legend1">Username</legend>
-        <!-- oninput serve para que toda vez que vc digite alguma coisa no input uma function seja ativa no JS-->
-<input type="text" class = "UserLogin required" placeholder = "Digite seu username" autofocus />
-</fieldset>
+<form class = "areaForm">
+        <h2>Login</h2>
+    <div class = "areaInputs">
+        <input type = "text" class = "UserLogin input" placeholder = "Username" />
+     </div>
+    
 
-<fieldset class = "fieldset2">
-    <legend class="legend1">Senha</legend>
-        <!-- oninput serve para que toda vez que vc digite alguma coisa no input uma function seja ativa no JS-->
-<input type="password" class = "SenhaLogin required" placeholder = "Digite sua senha" autofocus />
-</fieldset>
-
-
-<button type = "submit" class = "btnLogin">Logar</button>
-</form>
+    <div class = "areaInputs">
+        <input type = "password" class = "SenhaLogin input" placeholder = "Senha"/>
+    </div>
+    
+    <button type = "submit" class = "btnLogin"><i class="fa-solid fa-right-to-bracket seta"></i></button>
+    </form>
 </main>
-
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
