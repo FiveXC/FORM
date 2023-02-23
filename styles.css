@@ -1,307 +1,271 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300&display=swap');
-*{ /* esses códigos dentro do *{} serve para tirar as predefinições que ja veem*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+*{ 
 margin:0;
 padding:0;
 box-sizing: border-box;
-text-decoration: none;
+scroll-behavior: smooth;
+font-family: 'roboto';
 }
-.checkboxcor{
-display: none;
-}
-body.dark {
-background-image: url("https://images.pexels.com/photos/3648850/pexels-photo-3648850.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
-transition: 0.3s;
-}
-.areabntcor{
-margin-top: 0.5rem;
-display: flex;
-align-items: center;
-width: 10vw;
-height: 3vh;
-border: 1px solid rgb(0, 0, 0);
-border-radius: 1rem;
-cursor: pointer;
-}
-body.dark .areabntcor{
-border: 1px solid rgb(255, 255, 255);
-}
-body.dark .direita{
-background-color: black;
-opacity: 0.8;
-}
-body.dark header{
-background-color: #000000;
-}
-body.dark ::-webkit-input-placeholder{
-color: rgb(255, 255, 255);
-}
-body.dark .inNome, body.dark .inEmail,body.dark .inSenha, body.dark .inConfirmSenha{
-color: rgb(0, 0, 0);
-}
-    
-.bolinha{
-width: 1vw;
-height: 2vh;
-border: 0.5px solid black;
-margin-left: 0.2rem;
-border-radius: 1rem;
-background-color: rgb(0, 0, 0);
-cursor: pointer;
-transition: 0.3s;
-}
-.bolinha.mover{
-margin-left: 85%;
-transition: 0.3s;
-}
-body.dark .bolinha{
-border: 0.5px solid white;
-background-color: white;
-color: black;
-}
-html{
-height: 100%;
-    }    
 body{
-min-height: 100%;
-display: flex;
-flex-direction: column;
-background-color: #ffffff;
-color: white;
-font-family: 'Poppins',sans-serif;
-transition: 0.3s;
-background-image: url("audi.webp");
-background-position: center;
-background-attachment: absolute;
-background-repeat: no-repeat;
-background-size: cover;
-}
-header{
-width: 40%;
-background-color: #A970FF;
-background-color: white;
+background-color: #1776b6;
 }
 main{
 display: flex;
-}
-.direita{
-background-color: rgb(255, 255, 255);
-width: 40%;
-height:39rem;
+justify-content: center;
+align-items: center;
+padding-top: 4rem;
+height: 80vh;
+align-items: center;
 }
 .areaForm{
-margin: auto;
-margin-top: 4rem;
-width: 27vw;
-height: 80vh;
-border-radius: 0.5rem;
-}
-.areaForm.sumir{
-display: none;
-}
-h2{
-text-align: center;
-margin-top: 1rem;
-font-size: 2rem;
-font-weight: 900;
-color:  #A970FF;
-}
-.preencha{
-position: absolute;
-top: 9rem;
-left: 36rem;
-color: red;
-}
-form{
-margin-top: 3rem;
 display: flex;
 flex-direction: column;
 align-items: center;
-gap: 1rem;
-position: relative;
+background-color: white;
+padding-top: 1em;
+border-radius: 1rem;
+box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;;
 }
-fieldset{
+.areaForm h2{
+text-align: center;
+margin-bottom: 2rem;
+}
+.areaInputs{
+border: 1px solid black;
+margin-bottom: 1.5em;
 display: flex;
 align-items: center;
-width: 20vw;
-height: 8vh;
-color: #A970FF;
+position: relative;
 }
-.inNome{
-background-color: transparent;
-border: none;
-outline: none;
-color: #000000;
-width: 20vw;
-margin-left: 0.5rem; 
-}
-.preenchaNome{
-position: absolute;
-left: 2.8rem;
-top: 3rem;
-font-size: 0.7rem;
-color: rgb(255, 0, 0);
-display: none;
-}
-.inSenha{
-background-color: transparent;
-border: none;
-outline: none;
-color: rgb(0, 0, 0);
-width: 20vw;
-margin-left: 0.5rem;  
-}
-.olhoaberto1{
-position: absolute;
-left: 80%;
-top: 45%;
-cursor: pointer;
-color:  #A970FF;
-}
-.olhoaberto2{
-position: absolute;
-left: 80%;
-top: 65%;
-cursor: pointer;
-color:  #A970FF;
-}
-.inEmail{
-background-color: transparent;
-border: none;
-outline: none;
-color: rgb(0, 0, 0);
-width: 20vw;
-margin-left: 0.5rem;  
-}
-.preenchaEmail{
-position: absolute;
-font-size: 0.7rem;
-color: red;
-top: 7.3rem;
-left: 2.8;
-display: none;
-}
-.preenchaSenha{
-position: absolute;
-font-size: 0.7rem;
-color: red;
-top: 11.5rem;
-left: 2.8rem;
-display: none;
-}
-.preenchaConfirmSenha{
-position: absolute;
-font-size: 0.7rem;
-color: red;
-top: 15.5rem;
-left: 2.8rem;
-display: none;
-}
-.inConfirmSenha{
-background-color: transparent;
-border: none;
-outline: none;
-color: rgb(0, 0, 0);
-width: 20vw;
-margin-left: 0.5rem;  
-}
-::-webkit-input-placeholder{
-color: rgb(0, 0, 0);
-}
-.btnEnviar{
-margin-top: 1rem;
-width: 20vw;
-height: 10vh;
-background-color: #A970FF;
-color: white;
-font-size: 1.2rem;
-font-weight: 900;
+.btn{
 cursor: pointer;
 }
-.btnEnviar:active{
+.btn:active{
 scale: 0.95;
 }
-
-
-@media  (max-width: 730px){
-
-body.dark ::-webkit-input-placeholder{
-color: rgb(0, 0, 0);
+.btn:hover{
+border: 1px solid red;
+color: red;
 }
-body.dark .direita{
+.span{
+position: absolute;
+color: rgb(164, 23, 177);
+font-size: 0.7rem;
+display: none;
+}
+
+/*IPHONE SE PARA BAIXO*/ 
+@media (max-width: 376px )  { 
+.areaForm{
+width: 20em;
+height: 25em;
+}
+.areaInputs{
+width: 18em;
+height: 2em;
+padding-left: 0.5em;
+}
+.input{
+width: 98%;
+border: none;
+outline: none;
 background-color: transparent;
 }
-.direita{
-width: 100%;
-height: 32rem;
-position: relative;
+.btn{
+width: 5em;
+height: 5em;
+border-radius: 2rem;
+}
+.seta{
+font-size: 2em;
+}
+.span{
+top: 3em;
+left: 0.2em;
+}
+}
+           
+/*CELL POSIÇÃO PORTA RETRATO*/
+@media (min-width: 377px) and (max-width: 575.98px) {
+.areaForm{
+width: 20em;
+height: 25em;
+}
+.areaInputs{
+width: 18em;
+height: 2em;
+padding-left: 0.5em;
+}
+.input{
+width: 98%;
+border: none;
+outline: none;
 background-color: transparent;
 }
-.areabntcor{
-margin-left: 1rem;
-width: 13%;
-position: relative;
+.btn{
+width: 5em;
+height: 5em;
+border-radius: 2rem;
 }
-.checkboxcor{
-position: relative;
+.seta{
+font-size: 2em;
 }
-.bolinha{
-width: 0.5rem;
-height: 0.5rem;
-top: 22%;
+.span{
+top: 3em;
+left: 0.2em;
 }
-.bolinha.mover{
-margin-left: 83%;
+.preenchaSpan{
+position: absolute;
+top: 6em;
+color: rgb(164, 23, 177);
+display: none;
+}
+}
+        
+/*CELL MODO PAISAGEM*/
+@media (min-width: 576px) and (max-width: 767.98px) { 
+.areaForm{
+width: 28em;
+height: 25em;
+}
+.areaInputs{
+width: 25em;
+height: 2em;
+padding-left: 0.5em;
+}
+.input{
+width: 98%;
+border: none;
+outline: none;
+background-color: transparent;
+}
+.btn{
+width: 5em;
+height: 5em;
+border-radius: 2rem;
+}
+.seta{
+font-size: 2em;
+}
+.span{
+top: 3em;
+left: 0.2em;
+}
+}        
+            
+/*TABLETS*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+.areaForm{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+width: 38em;
+height: 38em;
+}
+.areaInputs{
+width: 30em;
+height: 3em;
+padding-left: 0.5em;
+}
+.input{
+width: 98%;
+border: none;
+outline: none;
+background-color: transparent;
+font-size: 1.3em;
+}
+.btn{
+width: 5em;
+height: 5em;
+border-radius: 2rem;
+}
+.seta{
+font-size: 2em;
+}
+.span{
+top: 3em;
+left: 0.2em;
+font-size: 1em;
+}
+}
+    
+/*NOTEBOOKS*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+.areaForm{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+width: 38em;
+height: 38em;
+}
+.areaInputs{
+width: 30em;
+height: 3em;
+padding-left: 0.5em;
+}
+.input{
+width: 98%;
+border: none;
+outline: none;
+background-color: transparent;
+font-size: 1.2rem;
+}
+.btn{
+width: 5em;
+height: 5em;
+border-radius: 2rem;
+}
+.seta{
+font-size: 2em;
+}
+.span{
+top: 3em;
+left: 0.2em;
+font-size: 1em;
+}
+}
+
+@media (min-width: 1200px){
+main{
+display: flex;
+justify-content: flex-start;
+padding-top: 4rem;
+height: 80vh;
 }
 .areaForm{
-width: 80%;
-height: 69vh;
-background-color: white;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+width: 38em;
+height: 42.9em;
+border-radius: 0rem;
 }
-form{
-width: 100%;
-height: 69vh;
-padding: 1rem;
+.areaInputs{
+width: 30em;
+height: 3em;
+padding-left: 0.5em;
 }
-fieldset{
-width: 90%;
-height: 3rem;
-position: relative;
+.input{
+width: 98%;
+border: none;
+outline: none;
+background-color: transparent;
+font-size: 1.2rem;
 }
-.olhoaberto1{
-left: 92%;
-top: 0%;
+.btn{
+width: 5em;
+height: 5em;
+border-radius: 2rem;
 }
-.olhoaberto2{
-left: 92%;
-top: 0%;
+.seta{
+font-size: 2em;
 }
-.inNome, .inEmail{
-width: 100% ;
+.span{
+top: 3em;
+left: 0.2em;
+font-size: 1em;
+}   
 }
-.inSenha, .inConfirmSenha{
-width: 84% ;
-}
-.preenchaNome{
-top: 130%;
-left:1%;
-}
-.preenchaEmail{
-top: 130%;
-left:1%;
-}
-.preenchaSenha{
-top: 130%;
-left:1%;
-}
-.preenchaConfirmSenha{
-top: 130%;
-left:1%;
-}
-
-}
-
-
-    
-    
-    
-    
