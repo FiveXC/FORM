@@ -9,13 +9,18 @@ btnLogin.addEventListener("click", vendo_se_tem_no_localstorage)
 
 function vendo_se_tem_no_localstorage(e){
 e.preventDefault()
+let encontrado = false;
 
-pegandoChave.forEach(function(infos){
+for (let i = 0; i < pegandoChave.length; i++) {
+  if (pegandoChave[i].Username === UserLogin.value) {
+    location.href = "https://github.com/FiveXC?tab=repositories"
+    encontrado = true;
+  }
+}
 
-if(UserLogin.value  != infos.Username || SenhaLogin.value  != infos.Senha){
-}
-else if(UserLogin.value  === infos.Username && SenhaLogin.value === infos.Senha){
- location.href = "https://github.com/FiveXC"
-}
-})
+if (!encontrado) {
+    alert("Seu Username ou senha estão erradas.")
+  } 
+
+
 }
