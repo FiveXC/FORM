@@ -12,7 +12,7 @@ e.preventDefault()
 let encontrado = false;
 
 for (let i = 0; i < pegandoChave.length; i++) {
-  if (pegandoChave[i].Username === UserLogin.value) {
+  if (pegandoChave[i].Username === UserLogin.value && pegandoChave[i].Senha === SenhaLogin.value) {
     location.href = "https://github.com/FiveXC?tab=repositories"
     encontrado = true;
   }
