@@ -43,9 +43,21 @@ Email: inputs[1].value,
 Senha: inputs[2].value,
 }
 
+let encontrado = false;
+
+for (let i = 0; i < pegandoChave.length; i++) {
+ if (pegandoChave[i].Email === inputs[1].value) {
+   alert("Email já resgistrado")
+   encontrado = true;
+ }
+}
+
+if (!encontrado) {
 pegandoChave.push(dados)
 localStorage.setItem("chave", JSON.stringify(pegandoChave))
 location.href = "login/index2.html"
+}
+
 }
 
 function valiUser(){
